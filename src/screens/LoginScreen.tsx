@@ -1,5 +1,5 @@
 import React from 'react';
-import { KeyboardAvoidingView, Platform, View } from 'react-native';
+import { View } from 'react-native';
 import tw from 'twrnc';
 
 import AppLogo from '../assets/svg/AppLogo';
@@ -14,11 +14,8 @@ import useLoginViewModel from '../viewmodels/LoginViewModel';
 const LoginPage: React.FC = () => {
   const {formState, updateFormState, handleLogin} = useLoginViewModel();
   return (
-    <KeyboardAvoidingView
-      behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
-      style={{flex : 1}}>
       <DismissKeyboardWrapper
-        style={tw`flex-1 items-center justify-center bg-white px-6 gap-6`}>
+        style={tw`flex-1 items-center bg-white px-6 pt-20`}>
         <AppLogo />
         <Text
           style={[
@@ -53,7 +50,6 @@ const LoginPage: React.FC = () => {
           disabled={!formState.isValid}
         />
       </DismissKeyboardWrapper>
-    </KeyboardAvoidingView>
   );
 };
 

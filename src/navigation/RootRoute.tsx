@@ -6,6 +6,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import LoginScreen from '../screens/LoginScreen';
 import SplashScreen from '../screens/SplashScreen/SplashScreen';
+import UserListScreen from '../screens/UserListScreen';
 import { RootStackParamList } from './navigation';
 import { navigationRef } from './navigationRef';
 
@@ -39,6 +40,7 @@ const RootRoute = () => {
             initialRouteName="LoginScreen"
             screenOptions={{headerShown: false}}>
             <Stack.Screen name="LoginScreen" component={LoginScreen} />
+            <Stack.Screen name="UserListScreen" component={UserListScreen}/>
           </Stack.Navigator>
         )}
       </NavigationContainer>
