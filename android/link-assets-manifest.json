@@ -1,0 +1,17 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/fonts.d.ts",
+      "sha1": "aa2c126d7a51068bbf7d098e211cc43e6c219e48"
+    },
+    {
+      "path": "src/assets/fonts/IBMPlexSansThai-Medium.ttf",
+      "sha1": "f3fe175319eeb61e4829b029dcc9cda5432593bf"
+    },
+    {
+      "path": "src/assets/fonts/IBMPlexSansThai-SemiBold.ttf",
+      "sha1": "013fcc4f97b4708320701d1688ae2bf08fb36d5d"
+    }
+  ]
+}
