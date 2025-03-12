@@ -16,11 +16,11 @@ const UserListScreen: React.FC = () => {
 
   const renderCard = (item: User) => (
     <View
-      style={tw`mx-6 my-3 h-50 bg-white rounded rounded-lg shadow-md flex-row overflow-hidden relative`}>
+      style={tw`mx-6 my-3 h-60 bg-white rounded rounded-lg shadow-md flex-row overflow-hidden relative`}>
       <View
         style={tw`absolute top-0 left-0 w-[4%] h-full bg-[${Colors.primary}]`}
       />
-      <View style={tw`flex-1 p-6 gap-3`}>
+      <View style={tw`flex-1 p-6 gap-4 justify-center`}>
         <Text style={[tw`text-center text-xl`, sharedStyle.fontBold]}>
           {item.name}
         </Text>
