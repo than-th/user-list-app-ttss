@@ -50,7 +50,7 @@ const UserListScreen: React.FC = () => {
             color={'white'}
             style={tw`bg-[${Colors.primary}] p-1 rounded-full shadow-md`}
           />
-          <Text>
+          <Text style={tw`flex-wrap max-w-[300px]`}>
             {item.address.suite +
               ' ' +
               item.address.street +
@@ -65,7 +65,7 @@ const UserListScreen: React.FC = () => {
   );
 
   return (
-    <View style={tw`flex-1 gap-2`}>
+    <View style={tw`flex-1`}>
       <TopNavbar title={'รายชื่อ'} />
       <FlatList
         data={users}
