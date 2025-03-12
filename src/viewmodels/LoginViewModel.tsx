@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import { useNavigation } from '@react-navigation/native';
 
@@ -27,11 +27,11 @@ const useLoginViewModel = () => {
   const updateFormState = (field: string, value: any) =>
     setFormState(prev => ({...prev, [field]: value}));
 
-  const handleLogin = useCallback(() => {
+  const handleLogin = () => {
     if (formState.isValid) {
       navigation.navigate('UserListScreen');
     }
-  }, [formState.isValid, navigation]);
+  };
 
   const validateForm = () => {
     let emailValid = emailRegex.test(formState.email);
